@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #8fe1d9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header button {
+  background-color: #419ed7;
+  width: 10%;
+  height: 5vh;
+  margin-left: 75%;
+  box-sizing: border-box;
+  border: 1px solid #419ed7;
+  font-family: "Averia Libre";
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.main-section {
+  background-image: url("../img/index-background.jpeg");
+  Scale Mode: Fill
+  Opacity: 15%
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section button {
+  background-color: #419ed7;
+  width: 50%;
+  height: 5vh;
+  border: 1px solid #419ed7;
+  font-family: "Averia Libre";
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.main-section h1 {
+  font-family: "Averia Libre";
+  font-style: normal;
+  font-size: 64px;
+  text-align: center;
+
+  color: #419ed7;
+}
