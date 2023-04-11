@@ -38,40 +38,32 @@ header h1 {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 60%;
   height: 70%;
 }
 
-.label-container {
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.input-container {
-  width: 65%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .container label {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .container input {
   border: none;
-  width: 95%;
-  height: 7%;
+  width: 70%;
+  height: 60%;
+  margin-left: 1rem;
+}
+
+.campo {
+  width: 100%;
+  height: 16.6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .radio-input {
@@ -81,8 +73,8 @@ header h1 {
 }
 
 .sexo-input {
-  width: 100%;
-  height: 6%;
+  width: 80%;
+  height: 52%;
   display: flex;
   flex-direction: row;
   justify-content: center;
