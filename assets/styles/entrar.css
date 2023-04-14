@@ -89,6 +89,7 @@ header h1 {
 .senha-label {
   color: #419ed7;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 u {
