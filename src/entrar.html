@@ -25,7 +25,10 @@
         </div>
       </div>
       <button id="entrar-button">Entrar</button>
-    </section>
+      <u>
+        <label id="senha-label" class="senha-label">Esqueci minha senha</label>
+      </u>
+      </section>
   </body>
   <script>
     // função que será executada quando a página for carregada
@@ -40,6 +43,14 @@ document
 
 function irParaHome() {
   window.location.href = "../src/home.html";
+}
+
+document
+  .getElementById("senha-label")
+  .addEventListener("click", irParaRecuperarSenha);
+
+function irParaRecuperarSenha() {
+  window.location.href = "../src/recuperar-senha.html";
 }
   </script>
 </html>

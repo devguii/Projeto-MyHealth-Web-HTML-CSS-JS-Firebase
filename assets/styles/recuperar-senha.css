@@ -43,7 +43,7 @@ header h1 {
   justify-content: center;
   width: 40%;
   height: 17%;
-  margin-top: 11rem;
+  margin-top: 1rem;
 }
 
 .container label {
@@ -84,14 +84,4 @@ header h1 {
   color: #fff;
   cursor: pointer;
   margin-top: 4rem;
-}
-
-.senha-label {
-  color: #419ed7;
-  cursor: pointer;
-}
-
-u {
-  color: #419ed7;
-  margin-top: 8rem;
 }
