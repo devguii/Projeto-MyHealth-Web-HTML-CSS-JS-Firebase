@@ -11,7 +11,7 @@
     <header>
       <img src="../assets/img/logo.png" class="logo" alt="logo" />
       <h1>MyHealth</h1>
-      <button>Já tenho conta</button>
+      <button id="ja-tenho-conta-button">Já tenho conta</button>
     </header>
     <section id="main-section" class="main-section">
       <div class="container">
@@ -29,4 +29,13 @@
     </section>
   </body>
   <script src="../assets/js/script.js"></script>
+  <script>
+    document
+      .getElementById("ja-tenho-conta-button")
+      .addEventListener("click", irParaEntrar);
+
+    function irParaEntrar() {
+      window.location.href = "../src/entrar.html";
+    }
+  </script>
 </html>
