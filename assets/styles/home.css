@@ -73,6 +73,17 @@ header h1 {
   height: 6%;
   border: none;
   margin-top: 3rem;
+  color: #8b8b8b;
+  font-size: 1.4rem;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3rem;
 }
 
 .card-section {
