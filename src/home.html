@@ -17,6 +17,10 @@
       <button id="logout-button" class="logout-button">Logout</button>
     </header>
     <section id="main-section" class="main-section">
+      <input class="search-bar"></input>
+      <section class="card-section">
+
+      </section>
       <button id="nova-vacina-button">Nova Vacina</button>
     </section>
   </body>
@@ -26,6 +30,22 @@
       // adicionando um console.log para testar se a função é executada corretamente
       console.log("Página carregada com sucesso!");
     });
+
+    document
+      .getElementById("minhas-vacinas-button")
+      .addEventListener("click", irParaMinhasVacinas);
+
+    function irParaMinhasVacinas() {
+      window.location.href = "../src/home.html";
+    }
+
+    document
+      .getElementById("logout-button")
+      .addEventListener("click", irParaIndex);
+
+    function irParaIndex() {
+      window.location.href = "../src/index.html";
+    }
 
     document
       .getElementById("nova-vacina-button")
