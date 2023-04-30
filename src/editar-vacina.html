@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Vacina</title>
+    <link rel="stylesheet" href="../assets/styles/config.css" />
+    <link rel="stylesheet" href="../assets/styles/editar-vacina.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/logo.png" class="logo" alt="logo" />
+      <h1>MyHealth</h1>
+      <button id="minhas-vacinas-button" class="minhas-vacinas-button">
+        Minhas vacinas
+      </button>
+      <button id="logout-button" class="logout-button">Logout</button>
+    </header>
+    <section id="main-section" class="main-section">
+        <div class="container">
+            <div class="campo-date">
+                <label class="label-input">Data de Vacinação</label><input class="date-input"></input>
+              </div>  
+              <br>
+            <div class="campo">
+              <label class="label-input">Vacina</label><input class="input"></input>
+            </div>
+            <br>
+            <div class="campo">
+              <label class="label-input">Dose</label><div class="dose-input">
+                <div class="campo-dose">
+                  <input type="radio" class="radio-input">
+                <label >1a. dose</label>
+                <input type="radio" class="radio-input">
+                <label>2a. dose</label>
+                <input type="radio" class="radio-input">
+                <label>3a. dose</label>
+                <input type="radio" class="radio-input">
+                <label>Reforço</label>
+                <input type="radio" class="radio-input">
+                <label>Dose única</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="campo-comprovante">
+              <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div>
+            <br>
+          </div>
+          <div class="campo-date">
+            <label class="label-input">Próxima vacinação</label><input class="date-input"></input>
+          </div>  
+        </div> 
+      <button id="cadastrar-button" class="cadastrar-button">Cadastrar</button>
+    </section>
+  </body>
+  <script>
+    // função que será executada quando a página for carregada
+    document.addEventListener("DOMContentLoaded", () => {
+      // adicionando um console.log para testar se a função é executada corretamente
+      console.log("Página carregada com sucesso!");
+    });
+
+    document
+      .getElementById("minhas-vacinas-button")
+      .addEventListener("click", irParaMinhasVacinas);
+
+    function irParaMinhasVacinas() {
+      window.location.href = "../src/home.html";
+    }
+
+    document
+      .getElementById("logout-button")
+      .addEventListener("click", irParaIndex);
+
+    function irParaIndex() {
+      window.location.href = "../src/index.html";
+    }
+
+    document
+      .getElementById("cadastrar-button")
+      .addEventListener("click", irParaHome);
+
+    function irParaHome() {
+      window.location.href = "../src/home.html";
+    }
+  </script>
+</html>
