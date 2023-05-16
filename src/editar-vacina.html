@@ -17,43 +17,54 @@
       <button id="logout-button" class="logout-button">Logout</button>
     </header>
     <section id="main-section" class="main-section">
+      <div class="divisor">
         <div class="container">
-            <div class="campo-date">
-                <label class="label-input">Data de Vacinação</label><input class="date-input"></input>
-              </div>  
-              <br>
-            <div class="campo">
-              <label class="label-input">Vacina</label><input class="input"></input>
-            </div>
+          <div class="campo-date">
+              <label class="label-input">Data de Vacinação</label><input class="date-input"></input>
+            </div>  
             <br>
-            <div class="campo">
-              <label class="label-input">Dose</label><div class="dose-input">
-                <div class="campo-dose">
-                  <input type="radio" class="radio-input">
-                <label >1a. dose</label>
-                <input type="radio" class="radio-input">
-                <label>2a. dose</label>
+          <div class="campo">
+            <label class="label-input">Vacina</label><input class="input"></input>
+          </div>
+          <br>
+          <div class="campo">
+            <label class="label-input">Dose</label><div class="dose-input">
+              <div class="campo-dose">
                 <input type="radio" class="radio-input">
-                <label>3a. dose</label>
-                <input type="radio" class="radio-input">
-                <label>Reforço</label>
-                <input type="radio" class="radio-input">
-                <label>Dose única</label>
-                </div>
+              <label >1a. dose</label>
+              <input type="radio" class="radio-input">
+              <label>2a. dose</label>
+              <input type="radio" class="radio-input">
+              <label>3a. dose</label>
+              <input type="radio" class="radio-input">
+              <label>Reforço</label>
+              <input type="radio" class="radio-input">
+              <label>Dose única</label>
               </div>
             </div>
-            <br>
-            <div class="campo-comprovante">
-              <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div>
-            <br>
+          </div>
+          <br>
+          <div class="campo-comprovante">
+            <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div>
+          <br>
           </div>
           <div class="campo-date">
             <label class="label-input">Próxima vacinação</label><input class="date-input"></input>
           </div>  
         </div>
-        <button id="excluir-button" class="excluir-button" href="#popup1">Excluir</button>
+      <button id="excluir-button" class="excluir-button">Excluir</button>
+      </div>
       <button id="salvar-button" class="salvar-button" href="./home.html">Salvar alterações</button>
     </section>
+
+    <dialog>
+      <div>
+        <h1>Tem certeza que deseja remover essa vacina?</h1>
+        <button id="confirmar-button" class="confirmar-button" href="">SIM</button>
+        <button id="cancelar-button" class="cancelar-button" href="">CANCELAR</button>
+      </div>
+    </dialog>
+    
   </body>
   <script>
     // função que será executada quando a página for carregada
@@ -61,6 +72,28 @@
       // adicionando um console.log para testar se a função é executada corretamente
       console.log("Página carregada com sucesso!");
     });
+
+    modal = document.querySelector("dialog")
+
+    document
+      .getElementById("confirmar-button")
+      .addEventListener("click", fecharPopUp);
+
+      document
+      .getElementById("cancelar-button")
+      .addEventListener("click", fecharPopUp);
+
+    function fecharPopUp() {
+      modal.close()
+    }
+
+    document
+      .getElementById("excluir-button")
+      .addEventListener("click", abrirPopUp);
+
+    function abrirPopUp() {
+      modal.showModal()
+    }
 
     document
       .getElementById("minhas-vacinas-button")
