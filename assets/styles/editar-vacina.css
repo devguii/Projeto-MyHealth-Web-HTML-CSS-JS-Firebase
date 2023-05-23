@@ -236,19 +236,28 @@ dialog::backdrop {
 }
 
 .popup-structure {
-  width: 50%;
-  height: 30%;
+  width: 47%;
+  height: 40%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-popup {
+  color: #fd7979;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
 }
 
 .confirmar-button {
   transition: all 0.3s ease-out;
   background-color: #ff8383;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  width: 10%;
-  height: 5vh;
+  width: 30%;
+  height: 8vh;
   box-sizing: border-box;
   border: none;
   font-family: "Averia Libre";
@@ -263,8 +272,8 @@ dialog::backdrop {
   transition: all 0.3s ease-out;
   background-color: #3f92c5;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  width: 15%;
-  height: 5vh;
+  width: 30%;
+  height: 8vh;
   box-sizing: border-box;
   border: none;
   font-family: "Averia Libre";
@@ -278,4 +287,8 @@ dialog::backdrop {
 .buttons-structure {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
