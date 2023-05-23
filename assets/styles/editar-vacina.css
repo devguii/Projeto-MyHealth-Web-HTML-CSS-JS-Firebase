@@ -236,9 +236,11 @@ dialog::backdrop {
 }
 
 .popup-structure {
-  width: 70%;
-  height: 20%;
+  width: 50%;
+  height: 30%;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .confirmar-button {
@@ -271,4 +273,9 @@ dialog::backdrop {
   text-align: center;
   color: #fff;
   cursor: pointer;
+}
+
+.buttons-structure {
+  display: flex;
+  flex-direction: row;
 }
