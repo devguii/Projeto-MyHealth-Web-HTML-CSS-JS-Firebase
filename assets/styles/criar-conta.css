@@ -98,13 +98,13 @@ header h1 {
 
 .radio-input {
   border: none;
-  width: 100%;
+  width: 10%;
   height: 100%;
 }
 
 .sexo-input {
   width: 85%;
-  height: 52%;
+  height: 70%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
