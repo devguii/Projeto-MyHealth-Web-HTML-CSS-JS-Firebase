@@ -20,7 +20,7 @@ const cadastrarUsuario = () => {
         .then((result) => {
              console.log("usuario cadastrado com sucesso!" + JSON.stringify(result))
 
-            
+             window.location.href = "../pages/entrar.html";
 
         })
         .catch((error) => {
