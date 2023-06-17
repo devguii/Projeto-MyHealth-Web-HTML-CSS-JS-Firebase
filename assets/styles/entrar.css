@@ -96,3 +96,10 @@ u {
   color: #419ed7;
   margin-top: 8rem;
 }
+
+.error-message{
+  color: red;
+  margin-right: 45%;
+  margin-top: 1%;
+  font-size: 18px;
+}

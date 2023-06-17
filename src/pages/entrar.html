@@ -15,12 +15,14 @@
     <section id="main-section" class="main-section">
       <div class="container">
           <div class="campo">
-            <label>E-mail</label><input class="input"></input>
+            <label>E-mail</label><input id="email-input" class="input"></input>
           </div>
+          <span id="email-message" class="error-message"></span>
           <br>
           <div class="campo">
-            <label>Senha</label><input class="input"></input>
+            <label>Senha</label><input id="senha-input" class="input"></input>
           </div>
+          <span id="password-message" class="error-message"></span>
           <br>
         </div>
       </div>
@@ -30,27 +32,7 @@
       </u>
       </section>
   </body>
-  <script>
-    // função que será executada quando a página for carregada
-document.addEventListener("DOMContentLoaded", () => {
-  // adicionando um console.log para testar se a função é executada corretamente
-  console.log("Página carregada com sucesso!");
-});
 
-document
-  .getElementById("entrar-button")
-  .addEventListener("click", irParaHome);
+  <script type="module" src="../js/entrar.js" ></script>
 
-function irParaHome() {
-  window.location.href = "../pages/home.html";
-}
-
-document
-  .getElementById("senha-label")
-  .addEventListener("click", irParaRecuperarSenha);
-
-function irParaRecuperarSenha() {
-  window.location.href = "../pages/recuperar-senha.html";
-}
-  </script>
 </html>
