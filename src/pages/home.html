@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="../assets/styles/config.css" />
-    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <link rel="stylesheet" href="../../assets/styles/config.css" />
+    <link rel="stylesheet" href="../../assets/styles/home.css" />
   </head>
   <body>
     <header>
-      <img src="../assets/img/logo.png" class="logo" alt="logo" />
+      <img src="../../assets/img/logo.png" class="logo" alt="logo" />
       <h1>MyHealth</h1>
       <button id="minhas-vacinas-button" class="minhas-vacinas-button">
         Minhas vacinas
@@ -37,7 +37,7 @@
       .addEventListener("click", irParaMinhasVacinas);
 
     function irParaMinhasVacinas() {
-      window.location.href = "../src/home.html";
+      window.location.href = "../pages/home.html";
     }
 
     document
@@ -45,7 +45,7 @@
       .addEventListener("click", irParaIndex);
 
     function irParaIndex() {
-      window.location.href = "../src/index.html";
+      window.location.href = "../pages/index.html";
     }
 
     document
@@ -53,7 +53,7 @@
       .addEventListener("click", irParaNovaVacina);
 
     function irParaNovaVacina() {
-      window.location.href = "../src/nova-vacina.html";
+      window.location.href = "../pages/nova-vacina.html";
     }
   </script>
 </html>

@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criar conta</title>
-    <link rel="stylesheet" href="../assets/styles/config.css" />
-    <link rel="stylesheet" href="../assets/styles/criar-conta.css" />
+    <link rel="stylesheet" href="../../assets/styles/config.css" />
+    <link rel="stylesheet" href="../../assets/styles/criar-conta.css" />
   </head>
   <body>
     <header>
-      <img src="../assets/img/logo.png" class="logo" alt="logo" />
+      <img src="../../assets/img/logo.png" class="logo" alt="logo" />
       <h1>MyHealth</h1>
     </header>
     <section id="main-section" class="main-section">
@@ -32,34 +32,22 @@
           </div>   
           <br>
           <div class="campo">
-            <label>E-mail</label><input class="input"></input>
+            <label>E-mail</label><input id="email-input" class="input"></input>
           </div>
           <br>
           <div class="campo">
-            <label>Senha</label><input class="input"></input>
+            <label>Senha</label><input id="senha-input" class="input"></input>
           </div>
           <br>
           <div class="campo">
-            <label>Repetir senha</label><input class="input"></input>
+            <label>Repetir senha</label><input id="rsenha-input" class="input"></input>
           </div>
         </div>
       </div>
       <button id="cadastrar-button">Cadastrar</button>
     </section>
+
+    <script type="module" src="..//js/criar-conta.js"></script>
+
   </body>
-  <script>
-    // função que será executada quando a página for carregada
-document.addEventListener("DOMContentLoaded", () => {
-  // adicionando um console.log para testar se a função é executada corretamente
-  console.log("Página carregada com sucesso!");
-});
-
-document
-  .getElementById("cadastrar-button")
-  .addEventListener("click", irParaEntrar);
-
-function irParaEntrar() {
-  window.location.href = "../src/entrar.html";
-}
-  </script>
 </html>

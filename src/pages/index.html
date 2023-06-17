@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="stylesheet" href="../assets/styles/config.css" />
-    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="stylesheet" href="../../assets/styles/config.css" />
+    <link rel="stylesheet" href="../../assets/styles/index.css" />
   </head>
   <body>
     <header>
-      <img src="../assets/img/logo.png" class="logo" alt="logo" />
+      <img src="../../assets/img/logo.png" class="logo" alt="logo" />
       <h1>MyHealth</h1>
       <button id="ja-tenho-conta-button" class="ja-tenho-conta-button">Já tenho conta</button>
     </header>
@@ -17,7 +17,7 @@
       <div class="container">
         <img
           class="main-background"
-          src="../assets/img/index-background.jpeg"
+          src="../../assets/img/index-background.jpeg"
           alt="background"
         />
         <img />
@@ -28,14 +28,23 @@
       </div>
     </section>
   </body>
-  <script src="../assets/js/script.js"></script>
+  <script src="../../assets/js/script.js"></script>
   <script>
     document
       .getElementById("ja-tenho-conta-button")
       .addEventListener("click", irParaEntrar);
 
+    document
+      .getElementById("criar-conta-button")
+      .addEventListener("click", irParaCriarConta);
+
     function irParaEntrar() {
-      window.location.href = "../src/entrar.html";
+      window.location.href = "../pages/entrar.html";
     }
+
+    function irParaCriarConta() {
+      window.location.href = "../pages/criar-conta.html";
+    }
+
   </script>
 </html>
