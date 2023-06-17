@@ -126,3 +126,10 @@ header h1 {
   cursor: pointer;
   margin-top: 3rem;
 }
+
+.error-message{
+  color: red;
+  margin-right: 20%;
+  margin-top: 1%;
+  font-size: 18px;
+}
