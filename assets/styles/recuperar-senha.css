@@ -85,3 +85,15 @@ header h1 {
   cursor: pointer;
   margin-top: 3.5rem;
 }
+
+.error-message {
+  color: red;
+  margin-right: 40%;
+  margin-top: 1%;
+}
+
+.confirm-message {
+  color: #419ed7;
+  margin-right: 5%;
+  margin-top: 1%;
+}

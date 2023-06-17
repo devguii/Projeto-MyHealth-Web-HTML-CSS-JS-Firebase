@@ -15,26 +15,16 @@
     <section id="main-section" class="main-section">
       <div class="container">
           <div class="campo">
-            <label>E-mail</label><input class="input"></input>
+            <label>E-mail</label><input id="email-input" class="input"></input>
           </div>
+          <span id="error-message" class="error-message"></span>
+          <span id="confirm-message" class="confirm-message"></span>
         </div>
       </div>
       <button id="redefinir-senha-button">Redefinir senha</button>
       </section>
   </body>
-  <script>
-    // função que será executada quando a página for carregada
-document.addEventListener("DOMContentLoaded", () => {
-  // adicionando um console.log para testar se a função é executada corretamente
-  console.log("Página carregada com sucesso!");
-});
 
-document
-  .getElementById("redefinir-senha-button")
-  .addEventListener("click", irParaEntrar);
+  <script type="module" src="../js/recuperar-senha.js"></script>
 
-function irParaEntrar() {
-  window.location.href = "../pages/entrar.html";
-}
-  </script>
 </html>
