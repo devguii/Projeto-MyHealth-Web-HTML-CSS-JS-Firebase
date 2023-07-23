@@ -173,6 +173,11 @@ header h1 {
   margin-left: 1rem;
 }
 
+.imgVacina {
+  width: 40%;
+  height: 70%;
+}
+
 .select-image-button {
   border: none;
   background-color: #419ed7;

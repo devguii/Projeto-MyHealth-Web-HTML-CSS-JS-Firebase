@@ -19,70 +19,43 @@
     <section id="main-section" class="main-section">
         <div class="container">
             <div class="campo-date">
-                <label class="label-input">Data de Vacinação</label><input class="date-input"></input>
+                <label class="label-input">Data de Vacinação</label><input type="date" id="date-input" class="date-input"></input>
               </div>  
               <br>
             <div class="campo">
-              <label class="label-input">Vacina</label><input class="input"></input>
+              <label class="label-input">Vacina</label><input id="name-input" class="input"></input>
             </div>
             <br>
             <div class="campo">
               <label class="label-input">Dose</label><div class="dose-input">
                 <div class="campo-dose">
-                  <input type="radio" class="radio-input">
+                  <input type="radio" name="dose" value="1" class="radio-input">
                 <label >1a. dose</label>
-                <input type="radio" class="radio-input">
+                <input type="radio" name="dose" value="2" class="radio-input">
                 <label>2a. dose</label>
-                <input type="radio" class="radio-input">
+                <input type="radio" name="dose" value="3" class="radio-input">
                 <label>3a. dose</label>
-                <input type="radio" class="radio-input">
+                <input type="radio" name="dose" value="Reforço" class="radio-input">
                 <label>Reforço</label>
-                <input type="radio" class="radio-input">
+                <input type="radio" name="dose" value="Dose única" class="radio-input">
                 <label>Dose única</label>
                 </div>
               </div>
             </div>
             <br>
             <div class="campo-comprovante">
-              <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div>
+              <label class="label-input">Comprovante da vacina</label><div class="image-area"><input type="file" id="select-image-input" class="select-image-input"></input><img id="imgVacina" class="imgVacina" /></div>
             <br>
           </div>
           <div class="campo-date">
-            <label class="label-input">Próxima vacinação</label><input class="date-input"></input>
+            <label class="label-input">Próxima vacinação</label><input type="date" id="next-date-input" class="date-input"></input>
           </div>  
         </div> 
+        <span id="result" class="result"></span>
       <button id="cadastrar-button" class="cadastrar-button">Cadastrar</button>
     </section>
+
+    <script type="module" src="../js/nova-vacina.js"></script>
+
   </body>
-  <script>
-    // função que será executada quando a página for carregada
-    document.addEventListener("DOMContentLoaded", () => {
-      // adicionando um console.log para testar se a função é executada corretamente
-      console.log("Página carregada com sucesso!");
-    });
-
-    document
-      .getElementById("minhas-vacinas-button")
-      .addEventListener("click", irParaMinhasVacinas);
-
-    function irParaMinhasVacinas() {
-      window.location.href = "../pages/home.html";
-    }
-
-    document
-      .getElementById("logout-button")
-      .addEventListener("click", irParaIndex);
-
-    function irParaIndex() {
-      window.location.href = "../pages/index.html";
-    }
-
-    document
-      .getElementById("cadastrar-button")
-      .addEventListener("click", irParaHome);
-
-    function irParaHome() {
-      window.location.href = "../pages/home.html";
-    }
-  </script>
 </html>

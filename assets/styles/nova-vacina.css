@@ -164,13 +164,18 @@ header h1 {
   margin-left: 1rem;
 }
 
-.select-image-button {
+.select-image-input {
   border: none;
   background-color: #419ed7;
   color: #fff;
   cursor: pointer;
   width: 100%;
   height: 25%;
+}
+
+.imgVacina {
+  width: 40%;
+  height: 70%;
 }
 
 .cadastrar-button {
@@ -187,4 +192,10 @@ header h1 {
   color: #fff;
   cursor: pointer;
   margin-top: 5rem;
+}
+
+.result{
+  color: #37bd6d;
+  font-size: 15px;
+  margin-top: 5%;
 }

@@ -1,5 +1,10 @@
 <html>
   <head>
+
+    <script>
+      let modal = {};
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,36 +25,37 @@
       <div class="divisor">
         <div class="container">
           <div class="campo-date">
-              <label class="label-input">Data de Vacinação</label><input class="date-input"></input>
+              <label class="label-input">Data de Vacinação</label><input type="date" id="date-input" class="date-input"></input>
             </div>  
             <br>
           <div class="campo">
-            <label class="label-input">Vacina</label><input class="input"></input>
+            <label class="label-input">Vacina</label><input id="name-input" class="input"></input>
           </div>
           <br>
           <div class="campo">
             <label class="label-input">Dose</label><div class="dose-input">
               <div class="campo-dose">
                 <input type="radio" class="radio-input">
-              <label >1a. dose</label>
+              <label class="radio-label">1a. dose</label>
               <input type="radio" class="radio-input">
-              <label>2a. dose</label>
+              <label class="radio-label">2a. dose</label>
               <input type="radio" class="radio-input">
-              <label>3a. dose</label>
+              <label class="radio-label">3a. dose</label>
               <input type="radio" class="radio-input">
-              <label>Reforço</label>
+              <label class="radio-label">Reforço</label>
               <input type="radio" class="radio-input">
-              <label>Dose única</label>
+              <label class="radio-label">Dose única</label>
               </div>
             </div>
           </div>
           <br>
           <div class="campo-comprovante">
-            <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div>
+            <!-- <label class="label-input">Comprovante da vacina</label><div class="image-area"><button class="select-image-button">Selecionar imagem...</button></div> -->
+            <label class="label-input">Comprovante da vacina</label><div class="image-area"><input type="file" id="select-image-input" class="select-image-input"></input><img id="imgVacina" class="imgVacina" /></div>
           <br>
           </div>
           <div class="campo-date">
-            <label class="label-input">Próxima vacinação</label><input class="date-input"></input>
+            <label class="label-input">Próxima vacinação</label><input type="date" id="next-date-input" class="date-input"></input>
           </div>  
         </div>
       <button id="excluir-button" class="excluir-button"><img class="trash-img" src="../../assets/img/trash.png" alt="Trash">Excluir</button>
@@ -69,53 +75,7 @@
         </div>
     </dialog>
     
+    <script type="module" src="../js/editar-vacina.js"></script>
+
   </body>
-  <script>
-    
-    modal = document.querySelector("dialog")
-
-    document
-      .getElementById("confirmar-button")
-      .addEventListener("click", fecharPopUp);
-
-      document
-      .getElementById("cancelar-button")
-      .addEventListener("click", fecharPopUp);
-
-    function fecharPopUp() {
-      modal.close()
-    }
-
-    document
-      .getElementById("excluir-button")
-      .addEventListener("click", abrirPopUp);
-
-    function abrirPopUp() {
-      modal.showModal()
-    }
-
-    document
-      .getElementById("minhas-vacinas-button")
-      .addEventListener("click", irParaMinhasVacinas);
-
-    function irParaMinhasVacinas() {
-      window.location.href = "../pages/home.html";
-    }
-
-    document
-      .getElementById("logout-button")
-      .addEventListener("click", irParaIndex);
-
-    function irParaIndex() {
-      window.location.href = "../pages/index.html";
-    }
-
-    document
-      .getElementById("cadastrar-button")
-      .addEventListener("click", irParaHome);
-
-    function irParaHome() {
-      window.location.href = "../pages/home.html";
-    }
-  </script>
 </html>
