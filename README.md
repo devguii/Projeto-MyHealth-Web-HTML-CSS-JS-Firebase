@@ -38,7 +38,7 @@ O projeto utiliza tecnologias de desenvolvimento web e integração com serviço
 
 ## ☁️ Deploy
 
-A aplicação pode ser acessada através do link abaixo:
+A aplicação pode ser acessada através do link:
 🚀 **[My-Health-Web](https://devguii.github.io/Projeto-MyHealth-Web-HTML-CSS-JS-Firebase/)**
 
 > **Nota:** Para rodar localmente, clone o repositório e utilize o "Live Server" no VS Code para abrir o `index.html`.
