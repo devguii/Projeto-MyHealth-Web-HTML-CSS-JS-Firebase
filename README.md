@@ -7,9 +7,9 @@
 
 ---
 
-**PT-BR:** O Project-MyHealth-Web é um sistema web desenvolvido para ajudar as pessoas a registrar seus comprovantes de vacinação. Construído usando HTML, CSS, JavaScript e Firebase.
+**PT-BR:** O Project-MyHealth-Web é um sistema web desenvolvido para ajudar as pessoas a registrar seus comprovantes de vacinação. 
 
-**EN:** Project-MyHealth-Web is a web application designed to help people register their vaccination vouchers. Built using HTML, CSS, JavaScript, and Firebase.
+**EN:** Project-MyHealth-Web is a web application designed to help people register their vaccination vouchers.
 
 ---
 
@@ -19,7 +19,7 @@
 O **MyHealth-Web** foi um projeto para a disciplina de Programação Web 1 do curso de Engenharia de Software da UTFPR.
 
 **EN:**
-**MyHealth-Web** was a project for the Web Programming 1 course in the Software Engineering program at UTFPR. ir **MyHealth-Web** was a project for the Web Programming 1 course in the Software Engineering program at UTFPR.
+**MyHealth-Web** was a project for the Web Programming 1 course in the Software Engineering program at UTFPR.
 
 ---
 
